@@ -1,0 +1,374 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+#herodiv {
+    background-color: #003b95;
+    width: 100%;
+    min-height: 430px;
+    padding: 35px 7%;
+    color: white;
+}
+
+
+/* ================= TOP BAR ================= */
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* BOOKING LOGO */
+
+#div1 span {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* RIGHT SIDE */
+
+#div2 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#div2 span {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn1 {
+    background-color: white;
+    color: #006ce4;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #eeeeee;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+#div3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 35px;
+}
+
+#div3 a {
+    padding: 12px 18px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+#div3 a:hover {
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+
+/* ================= HERO TEXT ================= */
+
+.hero-text {
+    padding-top: 90px;
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 22px;
+}
+
+
+/* ================= SEARCH BAR ================= */
+
+#input {
+    background-color: #febb02;
+
+    width: 86%;
+    min-height: 105px;
+
+    margin: -52px auto 0;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= SEARCH FIELDS ================= */
+
+.searchbr {
+    background-color: white;
+
+    min-height: 80px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    flex: 1;
+}
+
+
+/* DESTINATION */
+
+.destination {
+    flex: 1.5;
+}
+
+
+/* LABEL */
+
+.searchbr label {
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* INPUT */
+
+.searchbr input {
+    width: 100%;
+    height: 40px;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+
+/* ================= SEARCH BUTTON ================= */
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80px;
+
+    background-color: white;
+
+    padding: 8px;
+}
+
+
+#search {
+    width: 120px;
+    height: 60px;
+
+    background-color: #006ce4;
+
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#search:hover {
+    background-color: #0057b8;
+}
+
+
+/* ================= OFFERS SECTION ================= */
+
+.offers {
+    width: 86%;
+    margin: 70px auto;
+}
+
+.offers h2 {
+    padding: 0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.offers > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    width: 32%;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    #herodiv {
+        padding: 25px;
+    }
+
+    #top-bar {
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    #div2 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #div3 {
+        flex-wrap: wrap;
+    }
+
+    .hero-text {
+        padding-top: 60px;
+    }
+
+    #input {
+        width: 90%;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+
+    .searchbr {
+        width: 100%;
+    }
+
+    .destination {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #div1 span {
+        font-size: 25px;
+    }
+
+    #div2 {
+        font-size: 14px;
+    }
+
+    #div3 a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+}
